@@ -1,0 +1,49 @@
+
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 1rem;
+  background-color: #abd3f7;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #abd3f7
+}
+
+body {
+  background-color: #abd3f7;
+}
+
+nav {
+background-color: #f2f2f2;
+padding: 20px;
+}
+
+nav ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+}
+
+nav li {
+float: left;
+}
+
+nav li a {
+display: block; 
+color: black;
+text-align: center;
+padding: 14px 16px;
+text-decoration: 
+none;
+}
