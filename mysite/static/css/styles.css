@@ -2,19 +2,20 @@
 
 header {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
   padding: 1rem;
   background-color: #abd3f7;
 }
 
-.nav-links {
+
+nav-links {
   list-style: none;
   display: flex;
   gap: 1rem;
 }
 
-.nav-links li a {
+nav-links li a {
   text-decoration: none;
   color: #abd3f7
 }
@@ -46,4 +47,43 @@ text-align: center;
 padding: 14px 16px;
 text-decoration: 
 none;
+}
+
+header-wrapper { /* Assuming you added the wrapper in step 2 */
+  display: flex; /* Allow elements to sit side-by-side */
+  align-items: center; /* Vertically align content within the wrapper */
+}
+
+header-wrapper img {
+  width: 500px; /* Adjust the width as desired */
+  height: 500px; /* Adjust the height as desired */
+  margin-right: 100px; /* Optional spacing between logo and other elements */
+}
+
+header {
+  display: flex; /* Allow elements to sit side-by-side */
+  justify-content: space-between; /* Align logo to left, navigation to right */
+  align-items: center; /* Vertically align content within the header */
+  padding: 1rem;
+  background-color: #abd3f7;
+}
+
+.nav top-buttons {
+  list-style: none; /* Remove default bullet points */
+  display: flex; /* Allow buttons to sit side-by-side */
+  gap: 1rem; /* Add spacing between buttons */
+}
+
+.nav top-buttons a {
+  text-decoration: none; /* Remove underlines */
+  color: #abd3f7; /* Adjust color if needed */
+}
+
+.center {
+  text-align: center;
+}
+
+.center-container {
+  text-align: center;
+  margin: 0 auto;
 }

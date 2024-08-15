@@ -43,4 +43,7 @@ def my_account(request):
   
 def home(request):
     return redirect('landing')  # Redirect to the landing page named url
-  
+
+def login(request):
+    return render(request, 'login.html')  # Redirect to the landing page named url
+

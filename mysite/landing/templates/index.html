@@ -1,29 +1,18 @@
 
 
 <!DOCTYPE html>
-<html>
-<head>
+
+{% extends "base.html" %}
+{% block page_content %}
     {% load static %}
-    <meta charset="UTF-8">
-    <title>CardControl</title>
-    <link rel="stylesheet" href="styles.css"> </head>
     <link rel="stylesheet" href="{% static 'css/styles.css' %}">
-</head>
-<body>
-    <nav class="top-buttons">
-        <a href="{% url 'landing' %}">Home</a>
-        <a href="{% url 'signup' %}">Sign Up</a>
-        <a href="{% url 'my_account' %}">My Account</a>
-        <a href="https://cardcontrol.substack.com" class="top-button">Blog</a>
-    </nav>
-
-
     <section class="hero">
-        <h1>CardControl</h1>
-        <h1>Freeze. Protect. Breathe.</h1>
-        <p>With just one alert, we notify all your credit card issuers, freezing your accounts and preventing unauthorized charges.</p>
-        <button class="cta">Sign Up Now</button>
-        <a href="{% url 'signup' %}">Sign Up Now</a>
+        <div class="center">
+            <h1>CardControl</h1>
+            <h1>Freeze. Protect. Breathe.</h1>
+            <p>With just one alert, we notify all your credit card issuers, freezing your accounts and preventing unauthorized charges.</p>
+            <a href="{% url 'signup' %}">Sign Up Now</a>
+        </div>
     </section>
     <section class="benefits">
         <h2>Benefits</h2>
@@ -46,5 +35,5 @@
     <section class="cta-bottom"> 
     </section>
     <link rel="stylesheet" href="{% static 'css/styles.css' %}">
-</body>
-</html>
+
+{% endblock %}

@@ -10,3 +10,4 @@ class SignUpForm(forms.ModelForm):
         fields = ['username', 'email', 'password'] 
 
         widgets = {'password': forms.PasswordInput()}
+        
